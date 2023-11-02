@@ -1,4 +1,6 @@
 
-export default function AboutMe(){
-    return <div>WIP :)</div>
+export default function AboutMe() {
+    return <div>
+        Im tim
+    </div>
 }

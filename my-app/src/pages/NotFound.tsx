@@ -1,7 +1,7 @@
 export default function NotFound(){
     return (
         <div>
-            WIP :)
+            PAGE NOT FOUND :()
         </div>
     )
 }
