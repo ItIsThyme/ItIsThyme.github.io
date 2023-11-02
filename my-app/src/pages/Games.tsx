@@ -1,3 +1,3 @@
 export default function Games(){
-    return <div>WIP :)</div>
+    return <div>GAMES</div>
 }

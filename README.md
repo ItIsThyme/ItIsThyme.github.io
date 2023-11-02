@@ -1,3 +1,3 @@
 # ItIsThyme.github.io
 
-To depoly use: "npm run deploy -- -m "<COMMIT MESSAGE>""
+To depoly use: "npm run deploy -- -m "COMMIT MESSAGE"
