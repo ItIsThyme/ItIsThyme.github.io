@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { dark } from '@mui/material/styles/createPalette';
+import { orange } from '@mui/material/colors';
+import Dark from './themes/Dark';
+
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={Dark}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,5 +1,4 @@
-import { Container, Toolbar, AppBar, Typography, Box, Menu, MenuItem, Button } from "@mui/material";
-import { useState } from "react";
+import { Container, Toolbar, AppBar, Typography, Box, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const pages = ['Games', 'Experiments', 'About Me']
@@ -14,7 +13,6 @@ export default function CustomAppBar() {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="#app-bar"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -32,9 +30,9 @@ export default function CustomAppBar() {
                             <Link
                                 style={{ textDecoration: 'white', color: 'white' }}
                                 to={`/${page}`}
+                                key={page}
                             >
                                 <Button
-                                    key={page}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
 

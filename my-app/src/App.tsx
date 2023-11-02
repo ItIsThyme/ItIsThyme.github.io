@@ -1,7 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import CustomAppBar from './components/CustomAppBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Layout';
 import AboutMe from './pages/AboutMe';
