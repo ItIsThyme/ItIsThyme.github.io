@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ColorModeContext } from "../Layout";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import './CustomAppBar.scss';
 
 const pages = ['Games', 'Experiments', 'About Me']
 
@@ -20,28 +21,18 @@ export default function CustomAppBar() {
                         variant="h6"
                         noWrap
                         component="a"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
+                        className="appbar-title"
                     >
                         Helo :)
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
                         {pages.map((page) => (
                             <Link
-                                style={{ textDecoration: 'white', color: 'white' }}
+                                className="appbar-page-link"
                                 to={`/${page}`}
                                 key={page}
                             >
-                                <Button
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
+                                <Button className="appbar-page-link">
                                     {page}
                                 </Button>
                             </Link>
