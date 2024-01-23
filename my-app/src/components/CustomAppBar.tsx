@@ -25,7 +25,7 @@ export default function CustomAppBar() {
                     >
                         Helo :)
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { md: 'flex' }, marginRight: 5, marginLeft: 5 }}>
+                    <Box className="appbar-links-container">
                         {pages.map((page) => (
                             <Link
                                 className="appbar-page-link"
@@ -33,7 +33,9 @@ export default function CustomAppBar() {
                                 key={page}
                             >
                                 <Button className="appbar-page-link">
-                                    {page}
+                                    <Typography color={"text.secondary"}>
+                                        {page}
+                                    </Typography>
                                 </Button>
                             </Link>
                         ))}

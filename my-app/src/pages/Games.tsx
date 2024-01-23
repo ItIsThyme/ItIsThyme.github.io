@@ -4,8 +4,9 @@ import { Paper } from "@mui/material";
 
 const games: CardInfo[] = [
     {
-        name: 'pong',
-        imageURL: '/assets/pong.png'
+        name: 'Pong',
+        imageURL: '/assets/pong.png',
+        description: 'A game with a ball that goes like "boop" when it hits a paddle'
     }
 ]
 
@@ -14,7 +15,7 @@ export default function Games() {
 
 
     return (
-        <Paper sx={{display: 'flex', flexGrow: 1}}>
+        <Paper sx={{display: 'flex', flexGrow: 1, justifyContent: 'space-around'}}>
             {games.map(x => {
                 return <ActivityCard cardInfo={x} />
             })}
